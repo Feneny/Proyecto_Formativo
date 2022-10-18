@@ -11,15 +11,19 @@
 </head>
 <body class="d-flex h-100 text-center ">
     <div class="container">
-        <h1 class="text-center mt-1 text-light rounded-pill p-3 mb-2 bg-secondary text-white ">Tienda Buena vista</h1>
+        <h1 class="text-center mt-1 " id="titulo">Tienda buena vista</h1>
         <div class="my-5"></div>
         <h3 class="text-center ">Saludos te damos la bienvenida a tienda buena vista.</h3>
         
         <div class="d-flex h-100 w-100 p-3 mx-auto flex-column main-container ">
-            <div class="my-5"></div>
+            <div class="my-4"></div>
             <main class="px-3">
                 <h3>Agrega informacion de tus clientes, ingresos y prestamos.</h3>
-                <a href="{{ route('Cliente.index')}}" class="btn btn- btn-lg w-20">Ingresar</a>
+                <td id="botones">
+                    <!-- <button style="background-color:#f7c94c;border-color">Registrar nuevo cliente</button> -->
+                <a href="{{ route('clientes.index') }}" class="btn  w-20">Registrar un cliente.</a> 
+                <!-- <a href="#" class="btn w-20">Registrar ganancia.</a> --> 
+                </td>
             </main>
         </div>
     </div>
